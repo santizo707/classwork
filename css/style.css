@@ -1,0 +1,223 @@
+/*========================================================
+          Sitewide Styles
+==========================================================*/
+/*multiple selector*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  background-color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+/*========================================================
+          Book Navigation Section
+========================================================*/
+header {
+  position: relative;
+  margin: 0 auto;
+  height: (100% - 100px);
+  background-color: gray;
+  padding: 20px 0;
+}
+
+.page-header {
+  margin: 0;
+  border-bottom: none;
+}
+
+/*Search area*/
+.catalog-search {
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 20px;
+}
+
+/*Change main logo area*/
+.main-logo {
+  float: left;
+  width: 40%;
+  align-content: left;
+}
+
+/*Style logo color*/
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
+  color: black;
+  padding: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  font-family: 'Lato', sans-serif;
+}
+
+/*Change the color of the logo when hover */
+.logo:hover, .logo:focus {
+  text-decoration: none;
+  color: white;
+}
+.logo span:hover,  .logo span:focus {
+  text-decoration: none;
+  color: orange;
+}
+.logo span{
+  color: white;
+}
+
+/*Style the change area*/
+.menu-search {
+  float: right;
+  width: 30%;
+  margin-top: 20px;
+}
+.catalog-search {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#input-search {
+  border: none;
+  padding: 5px;
+  background: transparent;
+  width: 20%;
+  min-width: 264px;
+}
+input:focus, button:focus {
+    outline-width: 0;
+}
+/*Change color of input placeholder*/
+input::-webkit-input-placeholder {
+  color: gray;
+}
+
+/*Search button*/
+button {
+  background-color: black;
+  border: none;
+}
+/*Search icon*/
+.fa-search {
+  color: white;
+  padding: 10px;
+  text-align: right;
+}
+button:hover {
+  background-color: gray;
+}
+
+/*========================================================
+          Book Section
+========================================================*/
+/*styling book area*/
+.col-md-6 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+  height: 300px;
+  padding: 30px;
+  margin: 20px 0;
+}
+
+/*Book's title*/
+h3 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: #313131;
+}
+
+/*Style book author text*/
+.author {
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+  font-weight: 400;
+  color: rgba(49, 49, 49, 0.5);
+}
+
+.book-image {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  height: 250px;
+}
+
+.book-info {
+  float: right;
+  margin: 0 auto;
+  width: 40%;
+  text-align: left;
+  margin: 20px 10px;
+}
+
+/*Create background for the description area*/
+.book-info:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: calc(70% - 5px);
+  height: calc(100% - 10px);
+  border-radius: 3px;
+  box-shadow: 0 0 0 0 transparent;
+  z-index: -1;
+  transition: all 250ms ease-out;
+  box-shadow: 0px 1px 1px 1px rgba(210, 214, 213, 0.5);
+  background-color: #fff;
+}
+
+/*Change background when hover*/
+.book-info:hover:after  {
+  background-color: gray;
+  box-shadow: 0px 1px 1px 1px rgba(210, 214, 213, 0.5);
+}
+
+/*Description area; hide overflow*/
+.description {
+  font-size: 15px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow:hidden;
+  height: 65px;
+  padding: 5px 5px 10px 0;
+  text-overflow: ellipsis;
+}
+
+/*description area: show overflow scrollbar*/
+.description:hover, .description:active {
+  overflow: auto;
+}
+
+/*Style overflow scrollbar background*/
+.description::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+/*Style overflow scrollbar */
+.description::-webkit-scrollbar {
+	width: 12px;
+	background-color: #F5F5F5;
+  background: transparent;
+}
+
+/*Change color of scrollbar thum*/
+.description::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: gray;
+}
+
+.price {
+  margin-top: 30px;
+  margin-right: 15px;
+  text-align: right;
+}
